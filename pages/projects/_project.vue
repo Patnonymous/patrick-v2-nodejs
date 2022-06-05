@@ -1,8 +1,14 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col">
+      <div v-if="!projectName" class="col">
+        <h1>Welcome to the projects index. Select a project below!</h1>
+        <Carousel />
+      </div>
+
+      <div v-else class="col">
         <h1>Projects</h1>
+        <h1>{{ projectName }}</h1>
       </div>
     </div>
   </div>
@@ -11,6 +17,10 @@
 
 <script>
 export default {
+  async asyncData({ params }) {
+    const projectName = params.project;
+    return { projectName };
+  },
   data() {
     return {};
   },

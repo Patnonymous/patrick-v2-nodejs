@@ -13,23 +13,23 @@
       @sliding-end="onSlideEnd"
     >
       <!-- Loops through the slides data. -->
-      <b-carousel-slide
-        v-for="item in slidesDataArray"
-        :key="item.slideId"
-        :caption="item.slideCaption"
-        :text="item.slideText"
-      >
-        <template #img>
-          <img
-            class="d-block img-fluid w-100"
-            :class="{ 'low-brightness': item.lowerBrightness }"
-            width="1024"
-            height="480"
-            :src="item.slideImgUrl"
-            :alt="item.slideAltText"
-          />
-        </template>
-      </b-carousel-slide>
+      <div v-for="item in slidesDataArray" :key="item.slideId">
+        <!-- Surrounding the b-carousel-slide with a link allows for easy linking to project pages. -->
+        <b-link :to="item.projectUrl">
+          <b-carousel-slide :caption="item.slideCaption" :text="item.slideText">
+            <template #img>
+              <img
+                class="d-block img-fluid w-100 rounded"
+                :class="{ 'low-brightness': item.lowerBrightness }"
+                width="1024"
+                height="480"
+                :src="item.slideImgUrl"
+                :alt="item.slideAltText"
+              />
+            </template>
+          </b-carousel-slide>
+        </b-link>
+      </div>
     </b-carousel>
 
     <p class="mt-4">
@@ -65,6 +65,7 @@ export default {
           slideImgUrl: smiBuilderImage,
           slideAltText: "Main page for SmiBuilder.",
           lowerBrightness: true,
+          projectUrl: "/projects/SmiBuilder",
         },
         {
           slideId: 2,
@@ -73,6 +74,7 @@ export default {
           slideImgUrl: wifiWizardImage,
           slideAltText: "The help page for WifiWizard.",
           lowerBrightness: false,
+          projectUrl: "/projects/WifiWizard",
         },
       ],
     };
