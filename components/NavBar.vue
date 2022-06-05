@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mb-5">
     <b-navbar toggleable="lg" type="dark" variant="info">
       <b-navbar-brand to="/">Home</b-navbar-brand>
 
