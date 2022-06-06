@@ -43,6 +43,13 @@
 // Import the slide images for use in the v-for looped carousel.
 import smiBuilderImage from "~/assets/smibuilder/1viewing.png";
 import wifiWizardImage from "~/assets/wifiwizard/1mainmenu.png";
+
+/**
+ * @description Carousel to display projects.
+ *
+ * This is bad cause it's not a true component, data is harcoded. Should be changed to use
+ * props and dynamic data.
+ */
 export default {
   data() {
     return {
