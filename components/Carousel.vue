@@ -1,16 +1,13 @@
 <template>
   <div>
     <b-carousel
-      id="carousel-1"
-      v-model="slide"
+      id="carousel-projects"
       :interval="12000"
       controls
       indicators
       img-width="1920"
       img-height="1030"
       style="text-shadow: 1px 1px 2px #333"
-      @sliding-start="onSlideStart"
-      @sliding-end="onSlideEnd"
     >
       <!-- Loops through the slides data. -->
       <div v-for="item in slidesDataArray" :key="item.slideId">
@@ -31,11 +28,6 @@
         </b-link>
       </div>
     </b-carousel>
-
-    <p class="mt-4">
-      Slide #: {{ slide }}<br />
-      Sliding: {{ sliding }}
-    </p>
   </div>
 </template>
 
@@ -53,8 +45,6 @@ import wifiWizardImage from "~/assets/wifiwizard/1mainmenu.png";
 export default {
   data() {
     return {
-      slide: 0,
-      sliding: null,
       /**
        * @description Array holds data for each slide item.
        * @param {Number} slideId - Slide data ID
@@ -86,14 +76,7 @@ export default {
       ],
     };
   },
-  methods: {
-    onSlideStart(slide) {
-      this.sliding = true;
-    },
-    onSlideEnd(slide) {
-      this.sliding = false;
-    },
-  },
+  methods: {},
 };
 </script>
 
