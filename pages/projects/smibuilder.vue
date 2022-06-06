@@ -10,6 +10,12 @@
           including user activity, most popular characters and the most popular
           items.
         </p>
+        <a href="https://github.com/Patnonymous/smibuilder-client"
+          >Client Repo</a
+        >
+        <a href="https://github.com/Patnonymous/smibuilder-server"
+          >Server Repo</a
+        >
       </div>
     </div>
 
