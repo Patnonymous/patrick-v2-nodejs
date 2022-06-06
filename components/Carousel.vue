@@ -6,8 +6,8 @@
       :interval="12000"
       controls
       indicators
-      img-width="1024"
-      img-height="480"
+      img-width="1920"
+      img-height="1030"
       style="text-shadow: 1px 1px 2px #333"
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
@@ -21,8 +21,8 @@
               <img
                 class="d-block img-fluid w-100 rounded"
                 :class="{ 'low-brightness': item.lowerBrightness }"
-                width="1024"
-                height="480"
+                width="1920"
+                height="1030"
                 :src="item.slideImgUrl"
                 :alt="item.slideAltText"
               />
