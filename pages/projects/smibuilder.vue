@@ -5,10 +5,9 @@
         <h1 id="h1-smibuilder">SmiBuilder</h1>
         <p id="p-smibuilder-summary">
           Character build planner for a game. Users can log in, create a
-          character planner then publish it. Members can rate and favourite
-          builds, as well as make comments on them. Admins can view site stats
-          including user activity, most popular characters and the most popular
-          items.
+          character plan then publish it. Members can rate and favourite builds,
+          as well as make comments on them. Admins can view site stats including
+          user activity, most popular characters and the most popular items.
         </p>
         <a href="https://github.com/Patnonymous/smibuilder-client"
           >Client Repo</a
