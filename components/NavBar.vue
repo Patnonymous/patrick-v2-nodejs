@@ -16,6 +16,9 @@
           <b-nav-item :active="isRouteActive('contact')" to="/contact"
             >Contact</b-nav-item
           >
+          <b-nav-item :active="isRouteActive('resume')" href="/resume.pdf"
+            >Resume</b-nav-item
+          >
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
