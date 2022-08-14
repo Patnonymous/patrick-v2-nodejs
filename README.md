@@ -1,5 +1,9 @@
 # patrick-v2-nodejs
 
+## Important Notes
+### ERR_OSSL_EVP_UNSUPPORTED
+Use the legacy option 'NODE_OPTIONS=--openssl-legacy-provider'
+
 ## Build Setup
 
 ```bash
